@@ -1,0 +1,45 @@
+package com.bean;
+
+public class StudentB {
+
+	private int id;
+	private String fname, lname, email;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFname() {
+		return fname;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	@Override
+	public String toString() {
+		return "StudentB [id=" + id + ", fname=" + fname + ", lname=" + lname + ", email=" + email + "]";
+	}
+	public void init() {
+		System.out.println("Bean Initialized");
+	}
+	public void destroy() {
+		System.out.println("Bean Destroy");
+	}
+	
+	
+}

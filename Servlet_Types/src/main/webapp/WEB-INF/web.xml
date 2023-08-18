@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Servlet_Types</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ServletConfig</display-name>
+    <servlet-name>ServletConfig</servlet-name>
+    <servlet-class>com.controller.ServletConfig</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletConfig</servlet-name>
+    <url-pattern>/ServletConfig</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletCfg</display-name>
+    <servlet-name>ServletCfg</servlet-name>
+    <servlet-class>com.controller.ServletCfg</servlet-class>
+    <init-param>
+      <param-name>no1</param-name>
+      <param-value> 200 </param-value>
+    </init-param>
+    <init-param>
+      <param-name>no2</param-name>
+      <param-value> 900 </param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCfg</servlet-name>
+    <url-pattern>/SCFG</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+      <param-name>num1</param-name>
+      <param-value> 400 </param-value>
+   </context-param>
+   <context-param>
+      <param-name>num2</param-name>
+      <param-value> 110 </param-value>
+   </context-param>
+  
+  <servlet>
+    <description></description>
+    <display-name>ServletCntxt</display-name>
+    <servlet-name>ServletCntxt</servlet-name>
+    <servlet-class>com.controller.ServletCntxt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCntxt</servlet-name>
+    <url-pattern>/SCNTXT</url-pattern>
+  </servlet-mapping>
+</web-app>

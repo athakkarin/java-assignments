@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="s1" class="com.bean.StudentB">
+        <property name="list">
+            <list>
+                <value>1</value>
+                <ref bean="s2" />
+                <value>2</value>
+                <ref bean="s3" />
+                <value>3</value>
+                <ref bean="s4" />
+                <value>4</value>
+                <ref bean="s5" />
+                <value>5</value>
+                <ref bean="s6" />
+            </list>
+            
+        </property>
+        
+    </bean>
+     
+    <bean id="s2" class="com.bean.Student">
+        <property name="id" value="123"/>
+        <property name="fname" value="John"/>
+        <property name="lname" value="Carter"/>
+        <property name="email" value="Jc@gmail.com"/>
+        <property name="mobile" value="1234567890"/>
+    </bean>
+    
+    <bean id="s3" class="com.bean.Student">
+        <property name="id" value="134"/>
+        <property name="fname" value="James"/>
+        <property name="lname" value="Bond"/>
+        <property name="email" value="Jb@yahoo.com"/>
+        <property name="mobile" value="1234567899"/>
+    </bean>
+    
+    <bean id="s4" class="com.bean.Student">
+        <property name="id" value="147"/>
+        <property name="fname" value="Breaking"/>
+        <property name="lname" value="Bad"/>
+        <property name="email" value="Bb@outlook.com"/>
+        <property name="mobile" value="1234567899"/>
+    </bean>
+    
+    <bean id="s5" class="com.bean.Student">
+        <property name="id" value="154"/>
+        <property name="fname" value="Black"/>
+        <property name="lname" value="Ops"/>
+        <property name="email" value="Bo@twitter.com"/>
+        <property name="mobile" value="1234567899"/>
+    </bean>
+    
+    <bean id="s6" class="com.bean.Student">
+        <property name="id" value="162"/>
+        <property name="fname" value="Far"/>
+        <property name="lname" value="Cry"/>
+        <property name="email" value="Fc@facebook.com"/>
+        <property name="mobile" value="1234567899"/>
+    </bean>
+
+</beans>
